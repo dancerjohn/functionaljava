@@ -2,7 +2,7 @@ package org;
 
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
