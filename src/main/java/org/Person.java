@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 @Builder
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
 public class Person {
 
     @Getter
@@ -53,10 +54,27 @@ public class Person {
 
     @Data
     @Builder
+    @AllArgsConstructor(access = AccessLevel.PUBLIC)
     public static class Car{
         private final Make make;
         private final String color;
         private final int mileage;
+    }
+
+    public static abstract class Animal{}
+
+    @Data
+    @Builder
+    @AllArgsConstructor(access = AccessLevel.PUBLIC)
+    public static class Cat extends Animal{
+        private final String name;
+    }
+
+    @Data
+    @Builder
+    @AllArgsConstructor(access = AccessLevel.PUBLIC)
+    public static class Dog extends Animal{
+        private final String name;
     }
 
     @NonNull

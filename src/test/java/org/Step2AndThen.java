@@ -65,20 +65,4 @@ public class Step2AndThen {
 	private boolean firstNameStartsWith(Person p, String prefix){
 		return p.getFirstName().startsWith(prefix);
 	}
-
-//	private Function<Person, Boolean> firstNameStartsWithFunct(String prefix){
-//		// assume
-//		return p -> firstNameStartsWith(p, prefix);
-//	}
-//
-//	@Test
-//	public void predicatesVavrTease() {
-//		// Java way requires intermediate method that returns a Function
-//		Function<Person, Boolean> withJava = firstNameStartsWithFunct("J");
-//
-//		// Vavr way
-//		Function1<Person, Boolean> withVavr = Function2.of(this::firstNameStartsWith)
-//				.reversed()
-//				.apply("J");
-//	}
 }
