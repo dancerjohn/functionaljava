@@ -16,11 +16,14 @@ public class Step3Passing {
 
 	@Test
 	public void testCat(){
-		System.out.println(adopt(Cat::new));
+
+		System.out.println(
+				adopt(Cat::new));
 	}
 
 	@Test
 	public void testDog(){
-		System.out.println(adopt(Dog::new));
+		System.out.println(
+				adopt(Dog::new));
 	}
 }

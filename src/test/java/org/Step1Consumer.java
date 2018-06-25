@@ -8,9 +8,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-import com.google.common.collect.Lists;
-import io.vavr.Function1;
-import io.vavr.Function2;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
